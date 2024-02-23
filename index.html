@@ -1,0 +1,168 @@
+<p> </p>
+<h1 id="provisionnement">PROVISIONNEMENT</h1>
+<h2 id="provisionnement-1">Provisionnement</h2>
+<h3 id="modèle-chain-ladder">Modèle Chain Ladder</h3>
+<div class="definition">
+<p><span>Algorithme Chain Ladder</span> L’algorithme Chain Ladder repose
+sur les deux hypothèses suivantes :</p>
+<ul>
+<li><p><strong>(CL1))</strong> les montants cumulatifs pour différentes
+années de survenance</p></li>
+<li><p><strong>(CL2))</strong> il existe des facteurs de développement
+(ou facteurs multiplicatifs ou facteurs de déroulement) <span
+class="math inline"><em>λ</em><sub>1</sub>, …, <em>λ</em><sub><em>J</em> − 1</sub></span>
+tels que <span
+class="math inline"><em>λ</em><sub><em>j</em></sub></span> représente le
+développement de la période <span class="math inline"><em>j</em></span>
+à la période <span class="math inline"><em>j</em> + 1</span>, ou encore
+de la colonne <span class="math inline"><em>j</em></span> à la colonne
+<span class="math inline"><em>j</em> + 1</span> dans un triangle de
+développement : <span
+class="math inline"><em>C</em><em>i</em>(<em>j</em>+1) = <em>λ</em><em>j</em><em>C</em><em>i</em><em>j</em></span>
+pour <span class="math inline"><em>j</em> = 1, …, <em>J</em> − 1</span>
+et <span
+class="math inline"><em>i</em> = 1, …, <em>J</em></span></p></li>
+</ul>
+</div>
+<p>Les facteurs de développement <span
+class="math inline"><em>λ</em><sub><em>k</em></sub></span> sont estimés
+à l’aide des observations: <span
+class="math display">$$\widehat{\lambda}_k =
+\frac{\sum\limits_{i=1}^{J-k}C_{i(k+1)}}{\sum \limits_{i=1}^{J-k}C_{ik}}
+pour k=1,...,J-1$$</span><br />
+A partir de ces estimateurs <span
+class="math inline"><em>λ̂</em><sub><em>k</em></sub></span>, on peut
+estimer le cout total pour chacune des ann´ees de survenance et obtenir
+une estimation pour la réserve. <span
+class="math display"><em>Ĉ</em><sub><em>i</em><em>J</em></sub> = (<em>λ̂</em><sub><em>J</em> − <em>i</em> + 1</sub>×...×<em>λ̂</em><sub><em>J</em> − 1</sub>)<em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub></span></p>
+<p><span
+class="math display"><em>R̂</em><sub><em>i</em></sub> = <em>Ĉ</em><sub><em>i</em><em>J</em></sub> − <em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub></span>
+<span
+class="math display"><em>R̂</em> = ∑<em>R̂</em><sub><em>i</em></sub></span></p>
+<h3 id="modèle-mack">Modèle Mack</h3>
+<div class="definition">
+<p><span>Modèle de Mack</span> Les hypothèses du modèle de Mack sont</p>
+<ul>
+<li><p><strong>(MC1)</strong> indépendance par ligne : <span
+class="math inline">(<em>C</em><sub><em>i</em><em>j</em></sub>)<sub><em>j</em> = 1, ..., <em>J</em></sub></span>
+et <span
+class="math inline">(<em>C</em><sub><em>i</em>′<em>j</em></sub>)<sub><em>j</em> = 1, ..., <em>J</em></sub></span>
+sont indépendants pour <span
+class="math inline"><em>i</em> ≠ <em>i</em>′</span> ;</p></li>
+<li><p><strong>(MC2)</strong> on a la relation <span
+class="math inline"><em>E</em>[<em>C</em><sub><em>i</em><em>j</em></sub>|<em>C</em><sub><em>i</em>1</sub>,...,<em>C</em><sub><em>i</em>(<em>j</em>−1)</sub>] = <em>λ</em><sub><em>j</em> − 1</sub><em>C</em><sub><em>i</em>(<em>j</em>−1)</sub>, <em>j</em> = 2, ..., <em>J</em></span></p></li>
+</ul>
+</div>
+<h4 id="estimateur-du-cout-à-lultime">Estimateur du cout à l’ultime</h4>
+<div class="theoreme">
+<p><span>Proposition 1</span> Sous les hypothèses <strong>(MC1)</strong>
+et <strong>(MC2)</strong>, on a <span
+class="math display"><em>E</em>[<em>C</em><sub><em>i</em><em>J</em></sub>|𝒟<sub><em>J</em></sub>] = <em>E</em>[<em>C</em><sub><em>i</em><em>J</em></sub>|<em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub>] = <em>λ</em><sub><em>J</em> − 1</sub><em>λ</em><sub><em>J</em> − 2</sub>...<em>λ</em><sub><em>J</em> − <em>i</em> + 1</sub><em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub>, 1 ≤ <em>i</em> ≤ <em>J</em></span></p>
+</div>
+<div class="theoreme">
+<p><span>Proposition 2</span> Sous les hypothèses <strong>(MC1)</strong>
+et <strong>(MC2)</strong>,</p>
+<ol>
+<li><p>Sachant <span class="math inline">ℬ<sub><em>j</em></sub></span> ,
+l’estimateur <span
+class="math inline"><em>λ̂</em><sub><em>j</em></sub></span> est sans
+biais pour <span
+class="math inline"><em>λ</em><sub><em>j</em></sub></span>; et</p></li>
+<li><p>l’estimateur <span
+class="math inline"><em>λ̂</em><sub><em>j</em></sub></span> est sans
+biais pour <span
+class="math inline"><em>λ</em><sub><em>j</em></sub></span></p></li>
+</ol>
+</div>
+<div class="theoreme">
+<p><span>Proposition 3</span> Sous les hypothèses <strong>(MC1)</strong>
+et <strong>(MC2)</strong>,</p>
+<ol>
+<li><p>Sachant <span
+class="math inline"><em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub></span>,
+<span
+class="math inline"><em>Ĉ</em><sub><em>i</em><em>J</em></sub></span> est
+un estimateur sans biais pour <span
+class="math inline"><em>E</em>[<em>C</em><sub><em>i</em><em>J</em></sub>|<em>C</em><sub><em>i</em>(<em>J</em>−<em>i</em>+1)</sub>]</span></p></li>
+<li><p><span
+class="math inline"><em>Ĉ</em><sub><em>i</em><em>J</em></sub></span> est
+sans biais pour <span
+class="math inline"><em>E</em>[<em>C</em><sub><em>i</em><em>J</em></sub>]</span></p></li>
+<li><p>les estimateurs <span
+class="math inline"><em>λ̂</em><sub>1</sub>, ..., <em>λ̂</em><sub><em>j</em></sub></span>
+sont non correlés</p></li>
+</ol>
+</div>
+<h4 id="estimateur-pour-lerreur-de-prédiction">Estimateur pour l’erreur
+de prédiction</h4>
+<p>Une méthode stochastique a l’avantage de permettre l’estimation de
+l’erreur de prédiction.Pour le modèle de Mack, il faut modifier
+(compléter) la seconde hypothèse afin de pouvoir calculer l’erreur de
+prévision :</p>
+<p><span class="math display">$$\widehat{\sigma}_{j^2} = \frac{1}{J-j-1}
+\sum \limits_{i=1}^{J-j}C_{ij} \left( \frac{C_{i(j+1)}}{C_{ij}} -
+\widehat{\lambda}_j  \right)^2$$</span></p>
+<p><span class="math display">$$\widehat{\sigma}_{J-1}^2 = min
+\left\{  \frac{\widehat{\sigma}_{J-2}^4}{\widehat{\sigma}_{J-3}^2}, min
+\left\{  \widehat{\sigma}_{J-3}^2, \widehat{\sigma}_{J-2}^2 \right\}
+\right\}$$</span></p>
+<div class="theoreme">
+<p><span>Proposition 4</span> Sous les hypothèses <strong>(MC1)</strong>
+et <strong>(MC2)</strong>, on a</p>
+<ol>
+<li><p>sachant <span
+class="math inline">ℬ<sub><em>j</em></sub>,</span>l’estimateur <span
+class="math inline"><em>σ̂</em><sub><em>j</em></sub><sup>2</sup></span> ;
+est sans biais</p></li>
+<li><p>l’estimateur <span
+class="math inline"><em>σ̂</em><sub><em>j</em></sub><sup>2</sup></span>
+est sans biais pour <span
+class="math inline"><em>σ</em><sub><em>j</em></sub><sup>2</sup></span></p></li>
+</ol>
+</div>
+<div class="definition">
+<p><span>Erreur quadratique moyenne de prédiction</span> Pour une
+variable aléatoire <span class="math inline"><em>X</em></span>, on
+suppose que <span class="math inline"><em>X̂</em></span> est un
+estimateur <span class="math inline">ℬ</span>-mesurable pour <span
+class="math inline"><em>E</em>[<em>X</em>|𝒟]</span> et un prédicteur
+<span class="math inline">𝒟</span>-mesurable pour <span
+class="math inline"><em>X</em></span>. On définit l’erreur quadratique
+moyenne conditionnelle de prédiction par</p>
+<p><span class="math display">$$\begin{split}
+MSEP_{X|\mathcal{D}}(\widehat{X}) &amp; = E \left[ \left( \widehat{X} -
+X \right)^2 | \mathcal{D}  \right] \\
+                                  &amp; =
+\underbrace{Var\left[X|\mathcal{D} \right]}_{\mbox{erreur stochastique}}
++ \underbrace{ \left( \widehat{X} - E \left[X|\mathcal{D} \right]
+\right)^2}_{\mbox{erreur d'estimation}}
+\end{split}$$</span></p>
+</div>
+<h5 id="erreur-stochastique">Erreur stochastique</h5>
+<p>Pour une année de survenance <span
+class="math inline"><em>i</em> &gt; 1</span>, on a: <span
+class="math display">$$Var[C_{iJ}| \mathcal{D}_J] =
+\sigma_{J-1}^2C_{i(J-i+1)} = \prod_{m=J-i+1}^{J-2} \lambda_m +
+\lambda_{J-1}^2 Var\left[ C_{i(J-1)}|C_{i(J-i+1)}  \right]$$</span>
+<span class="math display">$$Var[C_{iJ}| C_{i(J-i+1)} ] = \left( E\left[
+C_{iJ}|C_{i(J-i+1)}  \right]  \right)^2 \sum \limits_{j=J-i+1}^{J-1}
+\frac{\sigma_j^2/\lambda_j^2}{E[C_{ij}|C_{i(J-i+1)}]}$$</span></p>
+<h5 id="erreur-destimation">Erreur d’estimation</h5>
+<p><span class="math display">$$\widehat{MSEP}_{C_{ij}|\mathcal{D}_J}^B
+(\widehat{C}_{iJ}) 	\approx C_{iJ}^2 \sum \limits_{i=J-i+1}^{J-1}
+\frac{\sigma_j^2}{\lambda_j^2} \left( \frac{1}{C_{ij}}
++\frac{1}{\sum_{i=1}^{J-j}C_{ij}} \right)$$</span></p>
+<div class="theoreme">
+<p><span>Proposition 5</span> L’estimateur de l’erreur quadratique
+moyenne conditionnelle de prédiction pour l’ensemble des années de
+survenance est donné par <span
+class="math display">$$\begin{split}                                  
+    \widehat{MSEP}_{\sum_i C_{iJ}|\mathcal{D}_J}^A  \left(
+\sum_{i=1}^{J}\widehat{C}_{iJ} \right) = \sum_{i=1}^J
+\widehat{MSEP}_{C_{iJ}|\mathcal{D}_J}^A(\widehat{C}_{iJ}) \\
+   + 2\sum_{1 \leq i &lt; k \leq J} C_{i(J-i+1)}\widehat{C}_{k(J-i+1)}
+\left( \prod \limits_{j=J-i+1}^{J-1} \left( \widehat{\lambda}_j^2 +
+\frac{\sigma_j^2}{\sum_{i=1}^{J-j} \widehat{C}_{ij}} \right) \prod
+\limits_{j=J-i+1}^{J-1} \widehat{\lambda}_j^2 \right)
+  \end{split}$$</span></p>
+</div>
